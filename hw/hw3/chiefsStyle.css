@@ -1,0 +1,18 @@
+/* 
+Chiefs style 
+<meta name="author" content="Akrom S">
+*/
+body {
+    background-color: red; 
+    background-position: center;
+    background-size: 100%;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+.song {font-style: italic;}
+p {
+  text-align: center;
+  color: yellow;
+}

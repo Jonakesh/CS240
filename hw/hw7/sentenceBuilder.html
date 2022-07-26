@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../../images/icon.png">
+<meta charset="utf-8">
+<meta name="author" content="Akrom S">
+<title>Sentence Builder</title>
+<script>
+  //This function add words.
+
+  function addWord(form) {
+  	var word; // creating a variable word
+    word = document.getElementById("result"); 
+    word.innerHTML += form.elements["text"].value + " ";
+    form.reset();
+    form.elements["text"].focus();
+  } // end addWord
+
+  //This function removes existing words and starts over.
+
+  function startOver(form) {
+  	var over; // creating a variable over
+    over = document.getElementById("result"); 
+    over.innerHTML = "";
+    form.reset();
+    form.elements["text"].focus();
+  } // end startOver
+</script>
+<style>
+  @font-face {
+  font-family: "Homegirlbouncy";
+  src: url("../../fonts/Homegirlbouncy.woff") format("woff"), 
+       url("../../fonts/Homegirlbouncy.woff2") format("woff2");
+  }
+  p {font-family: Homegirlbouncy, serif; color: orange;}
+  input[type=text]:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 10px blue;
+  }
+</style>
+</head>
+
+<body>
+<noscript>
+  <p>
+    This web page uses JavaScript. For proper results,
+    you must use a web browser with JavaScript enabled.
+  </p>
+</noscript>
+<h1>Sentence Builder</h1>
+<form>
+  Starting word for your sentence:
+  <input type="text" id="text" size="20" autofocus="autofocus" onfocus=""><br><br>
+  <input type="button" id="add-word" value="Add Word" onclick="addWord(this.form);">
+  <input type="button" id="start-over" value="Start Over" onclick="startOver(this.form);">
+  <input type="text" disabled style="background: transparent; border: none;">
+</form>
+<p id="result"></p>
+</body>
+</html>

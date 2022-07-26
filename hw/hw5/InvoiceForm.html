@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Akrom S">
+<title>Invoice Form</title>
+<style>
+  .table {width: 50%;}
+  caption {
+    font-size: 2em;
+    font-weight: bolder;
+    color: purple;
+  }
+  table, td, th {
+    border: thin solid blue;
+    border-collapse: collapse;
+    height: 10px;
+  }
+  th, td {padding: 10px;}
+  th {text-align: left;}
+  td:nth-child(1) {width: 40%;}
+  td:nth-child(2) {width: 25%;}
+  td:nth-child(3) {width: 15%;}
+  td:nth-child(4) {width: 20%;}
+  .thick-line > td {border-bottom-width: medium;}
+  .b-cell {background-color: black;}
+</style>
+</head>
+
+<body>
+<div class="table">
+  <table>
+  	<caption>Customer Order Form</caption>
+    <tr>
+      <td colspan="4">Order Number</td>
+    </tr>
+    <tr>
+      <td colspan="4">Order Date</td>
+    </tr>
+    <tr>
+      <th>Product Name</th>
+      <th>Color</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr class="thick-line">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="b-cell" colspan="4"></td>
+    </tr>
+    <tr>
+      <td colspan="4">Subtotal</td>
+    </tr>
+    <tr>
+      <td colspan="4">Tax</td>
+    </tr>
+    <tr>
+      <td colspan="3">Shipping</td>
+      <td>5.95</td>
+    </tr>
+    <tr>
+      <td colspan="4">Total</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

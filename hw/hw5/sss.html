@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Akrom S">
+<title>Invoice Form Grid</title>
+<style>
+  .grid {
+    display: inline-grid;
+    width: 50%;
+    border: thin solid blue;
+    grid-template-columns: 70% 35% auto 30%;
+    grid-template-rows: 3em repeat(12, 2em);
+  }
+  .span-4 {
+    grid-column: 1 / span 4;
+  }
+  .span-3 {
+    grid-column: 1 / span 3;
+  }
+  .grid > div {
+    border: thin solid blue;
+    padding: 10px;
+  }
+  .b-cell {
+    background-color: black;
+  }
+  .caption {
+  	display: table-caption;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+  }
+  div.table-heading {
+    font-weight: bolder;
+  }
+</style>
+</head>
+
+<body>
+<body>
+  <div class="grid">
+    <div class="caption span-4">Customer Order Form</div>
+    <div class="span-4">Order Number</div>
+    <div class="span-4">Order Date</div>
+    <div class="table-heading">Product Name</div>
+    <div class="table-heading">Color</div>
+    <div class="table-heading">Quantity</div>
+    <div class="table-heading">Price</div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div>
+    <div class="span-4 b-cell"></div>
+    <div class="span-4">Subtotal</div>
+    <div class="span-4">Tax</div>
+    <div class="span-3">Shipping</div>
+    <div>5.95</div>
+    <div class="span-4">Total</div>
+  </div>
+</body>
+</html>

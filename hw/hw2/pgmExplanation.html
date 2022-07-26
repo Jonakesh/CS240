@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Akrom S">
+<title>Converting money</title>
+</head>
+<body>
+<h1>Converting money</h1>
+<div>
+  My program is very familiar to everyone. We all see money currencies on TV's or when we go to the Airport to meet someone.<br>
+  <blockquote cite="https://www.investopedia.com/terms/c/conversion-rate.asp">What is <strong>currency</strong>?<br>
+  Conversion rates designate how much of one currency is needed to purchase goods using another currency.
+  </blockquote>
+  <br>
+</div>
+<p>
+  Those currencies shows that 1 <abbr title="U.S. Dollar">USD</abbr> in another country's currency like: euro, rubles, sums, yuan, franc, yen, and etc, would be *<em>this</em>* much. Let's look at some examples below where we will convert dollars to euro and dollars to rubles.<br>
+</p>
+<h4>Converting <abbr title="U.S. Dollar">$</abbr> to <abbr title="European Euro">&euro;</abbr></h4>
+<p>
+  In this given code fragment, if user inputs <kbd>150</kbd> <var>dollars</var>, program will convert that number and output <kbd>126.88</kbd> in <var>euro</var>.<br>
+  Here is how output will look like in the program: <samp>150 American Dollars in European Euro will be 126.88</samp><br>
+  1 <abbr title="U.S. Dollar">USD</abbr> = 0.845867 <abbr title="European Euro">EUR</abbr> (Last checked on <time datetime="2020-09-09 23:00">September 9 at 11pm</time>)
+</p>
+<h4>Converting <abbr title="U.S. Dollar">$</abbr> to <abbr title="Russian rubles">&#8381;</abbr></h4>
+<p>
+  Here is another example, let's convert <var>dollars</var> to <var>rubles</var>. For that, user inputs <kbd>100</kbd> <var>dollars</var>, and the program will output <kbd>7536</kbd> <var>rubles</var>.<br>  
+  Here is how output will look like in the program: <samp>100 American Dollars in Russian Rubles will be 7536</samp><br>
+  1 <abbr title="U.S. Dollar">USD</abbr> = 75.3653 <abbr title="Russian rubles">RUB</abbr> (Last checked on <time datetime="2020-09-09 23:00">September 9 at 11pm</time>)
+</p>
+<hr>
+<pre>
+//Code that converts dollars to euro<code>
+double dollars = 150; // input in dollars
+double euro = dollars / 1.18222; // converting dollars to euro
+System.out.println("dollars + "American Dollars in European Euro will be" + euro); // printing out the output in Euro
+</code></pre>
+<pre>
+//Code that converts dollars to rubles<code>
+double dollars = 100; // input in dollars
+double rubles = dollars * 75.36; // converting dollars to rubles
+System.out.println("dollars + "American Dollars in Russian Rubles will be" + rubles); // printing out the output in Rubles
+</code></pre>
+</body>
+</html>
